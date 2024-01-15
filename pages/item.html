@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Kengaytirilgan ma ' lumot</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-image: url(../img/cVmSX.png);
+        background-size: cover;
+        color: white;
+        /* text-shadow: 1px 2px 2px red, 0 0 1em blue, 0 0 0.2em green; */
+        cursor: pointer;
+      }
+      .row {
+        color: black;
+        margin-top: 10px;
+      }
+
+      .loader {
+        border: 16px solid #f3f3f3; /* Light grey */
+        border-top: 16px solid #3498db; /* Blue */
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .malumot{
+        /* border:1px solid rgb(116, 113, 113); */
+        text-align: center;
+        margin-left: 400px;
+        /* margin-top: 50px; */
+          }
+      .card{
+        text-align: center;
+      }
+      .card h5{
+        color:black;
+      }
+      .loader{
+        margin-top: 300px;
+        margin-left: 500px;
+      }
+
+    </style>
+
+    <a href="../index.html" class="btn btn-primary more-info my-3 mx-5"
+      >Ortga qaytish</a
+    >
+
+    <div class="container mt-4" id="all">
+      <h1 class="text-center">Mahsulot haqida batafsil ma'lumot</h1>
+
+      <div class="malumot mt-5 mb-5">
+   
+        <div class="card" style="width: 18rem;">
+            <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Iphone 13</h5>
+              <p class="card-text">Yaxshi ideal holatda</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Hali ham sotuvda</li>
+              <li class="list-group-item">Carta raqam : 1234567890</li>
+              <li class="list-group-item">Click raqam : 23456780</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+  
+      </div>
+      
+
+        <div class="loader ml-3 " id="loader"></div>
+    </div>
+
+    <script type="module" src="../js/item.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
